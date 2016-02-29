@@ -1,0 +1,49 @@
+.lout-sidebar {
+	width: $sidewidth;
+	height: 100%;
+	background: $baseblue;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	z-index: 999;
+	.mod-logo {
+		margin: 53px auto 40px auto;
+	}
+	.lout-sidebar-navi {
+		margin-bottom: 20px;
+		li {
+			height: 45px;
+			display: block;
+			border-bottom: 1px solid #fff;
+			text-align: left;
+			&:first-child {
+				border-top: 1px solid #fff;
+			}
+			a {
+				width: $sidewidth;
+				height: 45px;
+				padding-left: 30px;
+				line-height: 45px;
+				color: #fff;
+				font-size: 1.2rem;
+				display: inline-block;
+				text-decoration: none;
+				box-sizing: border-box;
+					&:hover {
+					background: $baseyellow;
+					width: $sidewidth + 4px;
+					border-radius: 0 4px 4px 0;
+					color: $baseblue;
+					&::after {
+						@include triangle;
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		margin: auto;
+		color: #fff;
+		font-size: 0.8rem;
+	}
+}

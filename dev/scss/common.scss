@@ -1,9 +1,9 @@
 //-------------------------------
 //--scss file
 //-------------------------------
+@import "base";
+@import "mixin";
 @import "main";
-
-.hoge {
-	width: 100%;
-	background: #f00;
-}
+@import "layout";
+@import "sidebar";
+@import "module";

@@ -80,15 +80,11 @@ gulp.task('imageminPngquant', function () {
  * Useref
  */
 gulp.task('html', function () {
-	var assets = useref.assets();
-
 	return gulp.src( paths.rootDir + '/**/*.+(html|php)' )
 		.pipe( gulpif( '*.html', replace( '/images', '/' + paths.serverDir + '/images' ) ) )
 		.pipe( gulpif( '*.html', replace( 'href="/', 'href="/' + paths.serverDir + '/' ) ) )
-		.pipe( assets )
 		.pipe( gulpif( '*.js', uglify() ) )
 		.pipe( gulpif( '*.css', minifyCss() ) )
-		.pipe( assets.restore() )
 		.pipe( useref() )
 		.pipe( gulp.dest( paths.dstrootDir ) );
 });
@@ -97,8 +93,8 @@ gulp.task('html', function () {
 * ejs
 */
 gulp.task( 'ejs', function () {
-	gulp.src( [paths.rootDir + '/ejs/*.ejs', '!' + paths.rootDir + '/ejs/_*.ejs'] )
-		.pipe( ejs({}, {ext: '.html'}) )
+	gulp.src( [paths.rootDir + '/ejs/**/*.ejs', '!' + paths.rootDir + '/ejs/**/_*.ejs'] )
+		.pipe(ejs())
 		.pipe(plumber({
 			errorHandler: notify.onError( 'Error: <%= error.message %>' )
 		}))
@@ -146,9 +142,9 @@ gulp.task( 'default', ['browser-sync'], function() {
 gulp.task( 'clean', del.bind( null, [paths.dstrootDir] ) );
 gulp.task( 'devcopy', function () {
 	return gulp.src([
-		paths.rootDir + '/*.*',
+		paths.rootDir + '/**/*.*',
 		'!'+ paths.rootDir + '/**/*.ejs',
-		'!'+ paths.rootDir + '/*.html'
+		paths.rootDir + '/*.html'
 	], {
 		dot: true
 	}).pipe( gulp.dest( paths.dstrootDir ) );
