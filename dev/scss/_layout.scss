@@ -15,20 +15,11 @@ body {
 		display: block;
 	}
 	.lout-base-sec {
-		// width: 100%;
-		// height: 100%;
-		// padding-top: 80px;
 		display: block;
 		line-height: 1.6;
 		box-sizing: border-box;
-		// position: relative;
-		// top: 0;
-		// left: $sidewidth;
-		// position: absolute;
-		// overflow: hidden;
 	}
 	.lout-mainvisual {
-		// min-height: 939px;
 		background: url(../images/mainvisual_bg.jpg) no-repeat;
 		background-size: 100% 100%;
 		font-size: 1.4rem;
@@ -37,25 +28,24 @@ body {
 		position: relative;
 	}
 	.lout-idea {
-		// min-height: 840px;
 		background: url(../images/idea_bg.jpg) no-repeat;
 		background-size: cover;
 		color: #fff;
+		.lout-idea-paragraph {
+			padding: 0 200px;
+		}
 	}
 	.lout-overview {
-		// min-height: 920px;
 		background: url(../images/overview_bg.jpg) no-repeat;
 		background-size: cover;
 		color: #fff;
 	}
 	.lout-form {
-		// min-height: 919px;
 		background: url(../images/form_bg.jpg) no-repeat;
 		background-size: cover;
 		color: #fff;
 	}
 	.lout-privacy {
-		// min-height: 1200px;
 		background: $baseblue;
 		background-size: cover;
 		color: #fff;
