@@ -1,7 +1,7 @@
 {
-  "name": "gulp-ejs",
-  "version": "1.0.1",
-  "description": "",
+  "name": "spycejs",
+  "version": "2.0.0",
+  "description": "This is use Sass and EJS to create Website.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,14 +19,15 @@
     "gulp-notify": "^2.2.0",
     "gulp-pleeease": "^2.0.2",
     "gulp-plumber": "^1.0.1",
-    "gulp-replace": "^0.5.4",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
     "gulp-useref": "^3.0.5",
+    "html5shiv": "^3.7.3",
     "imagemin-pngquant": "^4.2.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "sanitize.css": "^3.2.0"
   },
   "dependencies": {},
   "private": true

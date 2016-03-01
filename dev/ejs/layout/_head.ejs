@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+<% if( typeof title !== 'undefined' ) { %>
+	<title><%= title %></title>
+<% } else { %>
+	<title>ページに title を入れなかった時のtitle要素</title>
+<% } %>
+<% if( typeof metadescription !== 'undefined' ) { %>
+	<meta name="description" content="<%= metadescription %>">
+<% } -%>
+<% if( typeof metakeywords !== 'undefined' ) { %>
+	<meta name="keywords" content="<%= metakeywords %>">
+<% } %>
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- build:css /css/common.css -->
+	<link rel="stylesheet" href="/node_modules/sanitize.css/dist/sanitize.min.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<!-- endbuild -->
+
+	<!--[if lt IE 9]>
+		<!-- build:js /js/html5shiv.js -->
+		<script src="/node_modules/html5shiv/dist/html5shiv.min.js"></script>
+		<!-- endbuild -->
+	<![endif]-->
+
+</head>
+<body>
