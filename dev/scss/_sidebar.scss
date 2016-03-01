@@ -30,7 +30,7 @@
 				display: inline-block;
 				text-decoration: none;
 				box-sizing: border-box;
-					&:hover {
+					&:hover{
 					background: $baseyellow;
 					width: $sidewidth + 4px;
 					border-radius: 0 4px 4px 0;
@@ -39,6 +39,15 @@
 						@include triangle;
 					}
 				}
+			}//a
+			&.active a {
+					background: $baseyellow;
+					width: $sidewidth + 4px;
+					border-radius: 0 4px 4px 0;
+					color: $baseblue;
+					&::after {
+						@include triangle;
+					}
 			}
 		}
 	}

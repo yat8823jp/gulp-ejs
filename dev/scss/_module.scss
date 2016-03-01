@@ -8,12 +8,9 @@
 .mod-content {
 	width: $mainwidth;
 	height: 500px;
-	// margin: 0 auto auto 80px;
 	margin: auto;
 	padding-left: $sidewidth;
 	box-sizing: border-box;
-	// left: $sidewidth + 80px;
-	// left: 25%;
 	position: relative;
 	.mod-content-h2 {
 		font-size: 2.4rem;
@@ -86,7 +83,6 @@
 	}
 	.mod-form-dl {
 		font-size: 1.4rem;
-		// line-height: 3.0;
 		text-align: left;
 		dt {
 			float: left;
@@ -107,7 +103,6 @@
 	}
 	.mod-entry-form {
 		margin-left: 120px;
-		// text-align: center;
 	}
 	.mod-entry-form-submit {
 		margin-left: 275px;
@@ -118,7 +113,8 @@
 			border-style: none;
 			border-bottom: 4px solid #a49b0c;
 			background: $baseyellow;
-			&:hover {
+			&:hover,
+			.active {
 				height: 42px;
 				margin-top: 4px;
 				border-bottom: none;
