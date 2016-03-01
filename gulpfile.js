@@ -78,11 +78,21 @@ gulp.task( 'imageminPngquant', function () {
 /*
  * Useref
  */
+<<<<<<< HEAD
+gulp.task('html', function () {
+	return gulp.src( paths.rootDir + '/**/*.+(html|php)' )
+		.pipe( gulpif( '*.html', replace( '/images', '/' + paths.serverDir + '/images' ) ) )
+		.pipe( gulpif( '*.html', replace( 'href="/', 'href="/' + paths.serverDir + '/' ) ) )
+		.pipe( gulpif( '*.js', uglify() ) )
+		.pipe( gulpif( '*.css', minifyCss() ) )
+		.pipe( useref() )
+=======
 gulp.task( 'html', function () {
 	return gulp.src( paths.rootDir + '/**/*.+(html|php)' )
 		.pipe( gulpif( '*.js', uglify() ) )
 		.pipe( gulpif( '*.css', minifyCss() ) )
 		.pipe( useref( {searchPath: '{., dev}'} ) )
+>>>>>>> fe8a7b47fb1acc59fb24b851a28c57918e51c5c4
 		.pipe( gulp.dest( paths.dstrootDir ) );
 });
 
@@ -91,7 +101,11 @@ gulp.task( 'html', function () {
  */
 gulp.task( 'ejs', function () {
 	gulp.src( [paths.rootDir + '/ejs/**/*.ejs', '!' + paths.rootDir + '/ejs/**/_*.ejs'] )
+<<<<<<< HEAD
+		.pipe(ejs( {}, { 'ext':'.html' } ))
+=======
 		.pipe( ejs({}, {ext: '.html'}) )
+>>>>>>> fe8a7b47fb1acc59fb24b851a28c57918e51c5c4
 		.pipe(plumber({
 			errorHandler: notify.onError( 'Error: <%= error.message %>' )
 		}))
@@ -139,9 +153,14 @@ gulp.task( 'clean', del.bind( null, [paths.dstrootDir] ) );
 gulp.task( 'devcopy', function () {
 	return gulp.src([
 		paths.rootDir + '/**/*.*',
+<<<<<<< HEAD
+		'!'+ paths.rootDir + '/**/*.ejs',
+		paths.rootDir + '/*.html'
+=======
 		'!'+ paths.rootDir + '/ejs/**',
 		'!'+ paths.rootDir + '/scss/**',
 		'!'+ paths.rootDir + '/**/*.html'
+>>>>>>> fe8a7b47fb1acc59fb24b851a28c57918e51c5c4
 	], {
 		dot: true
 	}).pipe( gulp.dest( paths.dstrootDir ) );

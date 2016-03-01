@@ -2,84 +2,55 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-<<<<<<< HEAD
 	<title>株式会社エース</title>
 
 	<!-- ↓file combine config-->
 	<!-- build:css css/common.css -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="js/fullPage/jquery.fullPage.css">
-=======
-
-	<title>トップページABC</title>
-
-
-	<meta name="description" content="トップページ用のメタディスクリプションあああ">
-
-	<meta name="keywords" content="キーワード, カンマ">
-
-	<meta name="viewport" content="width=device-width">
-	<meta name="format-detection" content="telephone=no">
-
-	<!-- build:css /css/common.css -->
-	<link rel="stylesheet" href="/node_modules/sanitize.css/dist/sanitize.min.css">
-	<link rel="stylesheet" href="/css/common.css">
->>>>>>> fe8a7b47fb1acc59fb24b851a28c57918e51c5c4
 	<!-- endbuild -->
 
-	<!--[if lt IE 9]>
-		<!-- build:js /js/html5shiv.js -->
-		<script src="/node_modules/html5shiv/dist/html5shiv.min.js"></script>
-		<!-- endbuild -->
-	<![endif]-->
-
 </head>
-<body>
-<<<<<<< HEAD
+<body id="js-top">
 
 <!--↓read-temlatefile-->
 <aside class="lout-sidebar">
 	<h1 class="mod-logo"><img src="images/ace_logo.png" alt="ACE 株式会社エース"></h1>
 	<ul class="lout-sidebar-navi">
-		<li data-menuanchor="js-mainvisual"><a href="#js-mainvisual">トップ</a></li>
-		<li data-menuanchor="js-idea"><a href="#js-idea">企業理念</a></li>
-		<li data-menuanchor="js-overview"><a href="#js-overview">会社概要</a></li>
-		<li data-menuanchor="js-form"><a href="#js-form">お問い合わせ</a></li>
-		<li data-menuanchor="js-privacy"><a href="#js-privacy">プライバシーポリシー</a></li>
+		<li><a href="#js-top">トップ</a></li>
+		<li><a href="#js-idea">企業理念</a></li>
+		<li><a href="#js-overview">会社概要</a></li>
+		<li><a href="#js-form">お問い合わせ</a></li>
+		<li><a href="#js-privacy">プライバシーポリシー</a></li>
 	</ul>
 	<address class="copyright">
-		<p>&copy;2016 株式会社エース<br>
-		All Rights Reserved.</p>
+		<p>&copy;2016 株式会社エース All Rights Reserved.</p>
 	</address>
 </aside>
 
 <main class="lout-main">
 
-	<article id="fullpage" class="lout-base">
-		<section class="lout-mainvisual section" data-anchor="js-mainvisual">
+	<article class="lout-base">
+		<section id="js-mainvisual" class="lout-mainvisual">
 			<h1 class="mod-main-logo"><img src="images/mainvisual_logo.png" alt=""></h1>
 		</section>
-		<section class="lout-idea lout-base-sec section" data-anchor="js-idea">
+		<section id="js-idea" class="lout-idea lout-base-sec">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">企業理念</h2>
-				<div class="lout-idea-paragraph">
-					<h3 class="mod-content-h3">「日進月歩」<br>
-					絶え間なく、進歩・発展・知識技術の向上</h3>
-					<p>ご挨拶<br>
-					私どもは平成8年創業後、平成18年に千葉県へ拠点を移し地域に<br>根付いた電気工事会社として事業を展開してまいりました。</p>
+				<h3 class="mod-content-h3">「日進月歩」<br>
+				絶え間なく、進歩・発展・知識技術の向上</h3>
+				<p>ご挨拶<br>
+				私どもは平成8年創業後、平成18年に千葉県へ拠点を移し地域に<br>根付いた電気工事会社として事業を展開してまいりました。</p>
 
-					<p>近年、家電業界の急速な進歩に比例して、高齢化社会の高まりが<br>目立つようになり、工事業界の対応も年々変わりつつあります。<br>快適かつ安心して生活をしていくには、現代の家電製品をいかに<br>
-					効率よく使いこなすかで決まると考えております。</p>
+				<p>近年、家電業界の急速な進歩に比例して、高齢化社会の高まりが<br>目立つようになり、工事業界の対応も年々変わりつつあります。<br>快適かつ安心して生活をしていくには、現代の家電製品をいかに<br>
+				効率よく使いこなすかで決まると考えております。</p>
 
-					<p>今後とも、お客様に心から満足して頂ける様、誠意と真心を持って<br>
-					作業に取り組む事で信頼を形成し、それらを維持できるよう<br>
-					社員一同取り組んでまいります。</p>
-				</div>
+				<p>今後とも、お客様に心から満足して頂ける様、誠意と真心を持って<br>
+				作業に取り組む事で信頼を形成し、それらを維持できるよう社員一同取り組んでまいります。</p>
 				<p class="mod-right mod-idea-finish">代表取締役　　真野　由行</p>
 			</div>
 		</section>
-		<section class="lout-overview lout-base-sec section" data-anchor="js-overview">
+		<section id="js-overview" class="lout-overview lout-base-sec">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">会社概要・沿革</h2>
 				<div class="mod-content-left">
@@ -151,7 +122,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="lout-form lout-base-sec section" data-anchor="js-form">
+		<section id="js-form" class="lout-form lout-base-sec">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">お問い合わせ</h2>
 				<form action="#" class="mod-entry-form" method="post">
@@ -173,7 +144,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="lout-privacy lout-base-sec section" data-anchor="js-privacy">
+		<section id="js-privacy" class="lout-privacy lout-base-sec">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">個人情報の取扱いに関して</h2>
 				<div class="mod-content-privacy-left">
@@ -194,35 +165,22 @@
 			</div>
 		</section>
 	</article>
-=======
-<header>
-
-</header>
-<main>
-
-	<p>gulp-ejs 2.0.xリリース</p>
-	<p><img src="/images/leopard.jpg" alt="ヒョウ"></p>
-	<p>※CC0</p>
->>>>>>> fe8a7b47fb1acc59fb24b851a28c57918e51c5c4
 
 </main>
 
+<!--↓read-temlatefile-->
 <footer>
 </footer>
 
-<<<<<<< HEAD
 <!-- ↓file combine config-->
 <!-- build:js js/lib.js -->
 <script src="../bower_components/jQuery/dist/jquery.min.js"></script>
 <!-- endbuild -->
 <!-- build:js js/config.js -->
-<script src="js/fullPage/jquery.fullPage.js"></script>
+<script src="js/onepage-scroll/jquery.onepage-scroll.js"></script>
 <script src="js/config.js"></script>
-<!-- endbuild -->
-=======
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
->>>>>>> fe8a7b47fb1acc59fb24b851a28c57918e51c5c4
+<!-- endbuild
+
 
 </body>
 </html>
-

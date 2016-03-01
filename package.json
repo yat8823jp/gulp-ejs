@@ -29,6 +29,11 @@
     "run-sequence": "^1.1.5",
     "sanitize.css": "^3.2.0"
   },
+<<<<<<< HEAD
   "private": true,
   "dependencies": {}
+=======
+  "dependencies": {},
+  "private": true
+>>>>>>> 705e113a6301e943a30e0085bd258da442d4f49d
 }

@@ -1,0 +1,137 @@
+.mod-main-logo {
+	top: 50%;
+	left: 25%;
+	margin: -50px auto auto -44px;
+	position: absolute;
+}
+
+.mod-content {
+	width: $mainwidth;
+	height: 500px;
+	margin: auto;
+	padding-left: $sidewidth;
+	box-sizing: border-box;
+	position: relative;
+	.mod-content-h2 {
+		font-size: 2.4rem;
+		font-weight: bold;
+		padding-bottom: 48px;
+		background: url(../images/headline_border.png) no-repeat 0 42px;
+	}
+	.mod-content-h3 {
+		margin-bottom: 35px;
+		font-size: 2.0rem;
+	}
+	.mod-content-left {
+		width: 390px;
+		margin-right: 10px;
+		float: left;
+		dl {
+			line-height: 2.0;
+		}
+	}
+	.mod-content-right {
+		width: 440px;
+		float: right;
+		&::after {
+			@include beforeafter;
+		}
+		dl {
+			dt {}
+			dd {
+				margin-bottom: 35px;
+			}
+		}
+		.mod-overview-pdf {
+			width: 222px;
+			margin: auto;
+			padding: 10px;
+			border: 1px solid #fff;
+			img {
+				margin-right: 5px;
+				vertical-align: middle;
+			}
+			a {
+				color: #fff;
+				font-size: 1.4rem;
+				&:hover {
+					color: $baseyellow;
+				}
+			}
+		}
+	}
+	p {
+		font-size: 1.4rem;
+		margin-bottom: 24px;
+	}
+	.mod-overview-dl {
+		font-size: 1.4rem;
+		margin-bottom: 24px;
+		dt {
+			float: left;
+		}
+		dd {
+			margin-left: 90px;
+			box-sizing: border-box;
+		}
+	}
+	.mod-right {
+		text-align: right;
+	}
+	.mod-idea-finish {
+		margin-right: 200px;
+	}
+	.mod-form-dl {
+		font-size: 1.4rem;
+		text-align: left;
+		dt {
+			float: left;
+		}
+		dd {
+			margin-left: 110px;
+			margin-bottom: 20px;
+		}
+		input {
+			width: 307px;
+			height: 24px;
+			border-radius: 4px;
+		}
+		textarea {
+			width: 307px;
+			border-radius: 4px;
+		}
+	}
+	.mod-entry-form {
+		margin-left: 200px;
+	}
+	.mod-entry-form-submit {
+		margin-left: 275px;
+		button {
+			width: 146px;
+			height: 46px;
+			font-size: 1.4rem;
+			border-style: none;
+			border-bottom: 4px solid #a49b0c;
+			background: $baseyellow;
+			&:hover,
+			.active {
+				height: 42px;
+				margin-top: 4px;
+				border-bottom: none;
+				cursor: pointer;
+				background: #dfcf1e;
+			}
+		}
+	}
+	.mod-content-privacy-left {
+		width: 550px;
+		margin-right: 50px;
+		float: left;
+		.mod-content-h3 {
+			margin-bottom: 28px;
+		}
+		p {
+			margin-bottom: 35px;
+		}
+	}
+}
