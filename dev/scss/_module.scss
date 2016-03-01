@@ -9,8 +9,11 @@
 	width: $mainwidth;
 	height: 500px;
 	// margin: 0 auto auto 80px;
+	margin: auto;
+	padding-left: $sidewidth;
 	box-sizing: border-box;
-	left: $sidewidth + 80px;
+	// left: $sidewidth + 80px;
+	// left: 25%;
 	position: relative;
 	.mod-content-h2 {
 		font-size: 2.4rem;
@@ -72,6 +75,7 @@
 		}
 		dd {
 			margin-left: 90px;
+			box-sizing: border-box;
 		}
 	}
 	.mod-right {
@@ -102,7 +106,8 @@
 		}
 	}
 	.mod-entry-form {
-		// background: #f00;
+		margin-left: 120px;
+		// text-align: center;
 	}
 	.mod-entry-form-submit {
 		margin-left: 275px;

@@ -94,7 +94,7 @@ gulp.task('html', function () {
 */
 gulp.task( 'ejs', function () {
 	gulp.src( [paths.rootDir + '/ejs/**/*.ejs', '!' + paths.rootDir + '/ejs/**/_*.ejs'] )
-		.pipe(ejs())
+		.pipe(ejs( {}, { 'ext':'.html' } ))
 		.pipe(plumber({
 			errorHandler: notify.onError( 'Error: <%= error.message %>' )
 		}))

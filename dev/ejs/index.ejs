@@ -8,21 +8,22 @@
 	<!-- build:css css/common.css -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="js/fullPage/jquery.fullPage.css">
 	<!-- endbuild -->
 
 </head>
-<body id="js-top">
+<body>
 
 <!--↓read-temlatefile-->
 <% include _sidebar %>
 
 <main class="lout-main">
 
-	<article class="lout-base">
-		<section id="js-mainvisual" class="lout-mainvisual" data-index="1">
+	<article id="fullpage" class="lout-base">
+		<section class="lout-mainvisual section" data-anchor="js-mainvisual">
 			<h1 class="mod-main-logo"><img src="images/mainvisual_logo.png" alt=""></h1>
 		</section>
-		<section id="js-idea" class="lout-idea lout-base-sec" data-index="2">
+		<section class="lout-idea lout-base-sec section" data-anchor="js-idea">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">企業理念</h2>
 				<h3 class="mod-content-h3">「日進月歩」<br>
@@ -38,7 +39,7 @@
 				<p class="mod-right mod-idea-finish">代表取締役　　真野　由行</p>
 			</div>
 		</section>
-		<section id="js-overview" class="lout-overview lout-base-sec" data-index="3">
+		<section class="lout-overview lout-base-sec section" data-anchor="js-overview">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">会社概要・沿革</h2>
 				<div class="mod-content-left">
@@ -110,7 +111,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="js-form" class="lout-form lout-base-sec" data-index="4">
+		<section class="lout-form lout-base-sec section" data-anchor="js-form">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">お問い合わせ</h2>
 				<form action="#" class="mod-entry-form" method="post">
@@ -132,7 +133,7 @@
 				</form>
 			</div>
 		</section>
-		<section id="js-privacy" class="lout-privacy lout-base-sec" data-index="5">
+		<section class="lout-privacy lout-base-sec section" data-anchor="js-privacy">
 			<div class="mod-content">
 				<h2 class="mod-content-h2">個人情報の取扱いに関して</h2>
 				<div class="mod-content-privacy-left">
